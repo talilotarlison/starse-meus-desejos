@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projetos e Desejos Incriveis</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  </head>
+  <body>
+    <!---cabeçalho da pagina-->
+    <header>
+      <h1><span>StartSa </span>| Página de muitos desejos</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Sobre Empresa</li>
+          <li>Formulários</li>
+        </ul>
+      </nav>
+    </header>
+    <!--sessao da pagina principal-->
+    <section class="banner">
+      <div class="text">
+        <h1>Seus desejos devem ser incríveis!</h1>
+        <p>
+          Escreva teus desejos! Deixe sugestão de desejo! Busca nos links,
+          aquilo que te agrada!
+        </p>
+        <button class="clica">Clica, comece agora!</button>
+      </div>
+      <picture>
+        <img
+          src="https://andrehlb.github.io/webdev.github.io/assets/images/brahma-yoga-yellow-background.gif"
+        />
+      </picture>
+    </section>
+    <!--Forumulario do site
+    https://andrehlb.github.io/webdev.github.io/#form
+  https://triangulo.dev/posts/css-grid-alinhando-elementos-na-pratica/-->
+    <section class="formulario">
+      
+      <form id="form" action="https://www.google.com/">
+          <h2>Formulário de Desejos</h2>
+        <div>
+        <label for="name">Digite teu nome:</label>
+        <input id="name"type="text"></input>
+        </div>
+        <div>
+        <label for="profissao">Digite tua profissão:</label>
+        <input id="profissao"type="text"></input>
+        </div>
+        <div>
+        <label for="desejo">Escreva sobre você e aquilo que mais deseja:</label>
+        <textarea rows="5" id="desejo" type="text" fixed></textarea>
+        </div>
+        <fieldset>
+            <legend>Você faz exercícios regularmente?</legend>
+            <div>
+                <label for="sim">sim</label>
+                <input type="radio" id="sim" name="não"
+                       checed>
+                
+              </div>
+              <div>
+                  <label for="nao">não</label>
+                  <input type="radio" id="nao" name="Não"
+                         >
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend> Onde você encontra teus tópicos, assuntos favoritos?:</legend>
+        
+            <div>
+                <label for="instagram">instagram</label>
+              <input type="checkbox" id="instagram" name="instagram" checked>
+             
+            </div>
+        
+            <div>
+                <label for="facebook">Facebook</label>
+              <input type="checkbox" id="facebook" name="facebook">
+             
+            </div>
+            <div>
+                <label for="Youtube">Youtube</label>
+                <input type="checkbox" id="Youtube" name="Youtube">
+                
+              </div>
+              <div>
+                  <label for="app">Aplicativo</label>
+                  <input type="checkbox" id="app" name="app">
+                  
+                </div>
+        </fieldset>
+        <!--https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/datalist-->
+        <label>Qual o seu navegador favorito?</label>
+        <input list="browsers" />
+              <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Internet Explorer">
+                <option value="Opera">
+                <option value="Safari">
+              </datalist>
+              <p>Qual o tipo, gênero de filme que você gosta?</n>
+                <select name="moviePreference" id="moviePreference">
+                    <option value="">-Por favor, selecione uma opção-</option>
+                    <option></option>
+                    <option value=1 href="https://www.imdb.com/list/ls083286824/">Comédia</option>
+                    <option value=2>Ficção</option>
+                    <option value=3>Drama</option>
+                    <option value=4>Anime</option>
+                    <option value=5>Aventura</option>
+                    <option value=6>Ação</option>
+                </select>
+        <button class="botao-resete" type="reset" value="Reset"> Resetar</button>
+        <button class="botao-enviar" type="submit" value="Enviar"> Enviar </button>
+      </form>
+    </section>
+  </body>
+</html>
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /*font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+  background-color: RGB(255, 188, 13); /* Mac Donald's yellow */
+}
+header {
+  padding: 15px 0;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin: 0 15px;
+  transition: 0.5s;
+}
+li:hover {
+  color: white;
+}
+header > h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+span {
+  color: #4176e1;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+.text > p {
+  font-size: 20px;
+}
+.banner > picture > img {
+  width: 500px;
+}
+.clica {
+  color: orange;
+  padding: 15px 20px;
+  background-color: red;
+  border: none;
+  font-size: 16px;
+  border-radius: 35px;
+  transition: 0.5s;
+}
+.clica:hover {
+  background-color: seashell;
+  color: red;
+}
+.banner {
+  margin: 0 auto;
+  width: 80vw;
+}
+div.text {
+  margin: 0 100px;
+  overflow: auto;
+}
+.formulario {
+  width: 100%;
+  background-color: black;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+}
+form > h2 {
+  text-align: center;
+}
+input,
+textarea {
+  display: block;
+  margin: 5px 0px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 15px;
+  resize: none;
+}
+select {
+  display: block;
+  width: 100%;
+}
+
+.botao-resete {
+  margin: 10px auto;
+  text-align: center;
+  background-color: RGB(255, 188, 13);
+  color: black;
+  padding: 5px;
+  width: 150px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.botao-resete:hover {
+  background-color: red;
+  color: black;
+}
+
+.botao-enviar {
+  margin: 10px auto;
+  text-align: center;
+  background-color: RGB(255, 188, 13);
+  color: black;
+  padding: 5px;
+  width: 150px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.botao-enviar:hover {
+  background-color: rgb(0, 140, 255);
+  color: black;
+}
+

@@ -43,7 +43,7 @@ span {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  height: 89vh;
 }
 .text > p {
   font-size: 20px;
@@ -53,9 +53,9 @@ span {
 }
 
 .clica {
-  color: orange;
+  color: white;
   padding: 15px 20px;
-  background-color: red;
+  background-color: #4176e1;
   border: none;
   font-size: 16px;
   border-radius: 35px;
@@ -87,7 +87,8 @@ div.text {
 }
 form > h2 {
   text-align: center;
-  margin-top: 15px;
+  margin: 15px;
+  color: white ;
 }
 input,
 textarea {
@@ -102,16 +103,19 @@ select {
   display: block;
   width: 100%;
 }
-
+label{
+  margin: 15px;
+}
 .botao-resete {
+   padding: 15px 20px;
+   borde: none;
   margin: 10px auto;
   text-align: center;
-  background-color: RGB(255, 188, 13);
+  background-color: white;
   color: black;
-  padding: 5px;
   width: 150px;
   border: none;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: 25px;
   transition: 0.5s;
 }
@@ -125,7 +129,7 @@ select {
   text-align: center;
   background-color: RGB(255, 188, 13);
   color: black;
-  padding: 5px;
+   padding: 15px 20px;
   width: 150px;
   border: none;
   font-size: 16px;
@@ -138,7 +142,7 @@ select {
 }
 footer{
   text-align: center;
-  background-color: black;
+  background-color: #4176e1;
   color:  white;
 }
 
@@ -147,8 +151,9 @@ footer{
 @media (max-width: 780px)
 { 
   ul > li a{
-  color: red;
+  color: #4176e1;
   font-size: 20px;
+  font-weight:  bolt;
 
 }
   header{

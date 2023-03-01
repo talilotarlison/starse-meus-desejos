@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projetos e Desejos Incriveis</title>
+  
+    <link rel="icon" href="./assets/img/startse-icon.png"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" media="screen" />
+       <link rel="stylesheet" href="./assets/css/responsive.css"/>
 
   </head>
   <body>
     <!---cabeçalho da pagina-->
     <header>
-      <h1><span>StartSa </span>| Página de muitos desejos</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="empresa.html">Sobre Empresa</a></li>
-          <li><a href="#formulario_ancora">Formulários</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+         <div></div><img src="./assets/img/startse_logo.png" /></div>
+           <section class="menu-section">
+                <div class="container-menu">
+                    <input type="checkbox" id="checkbox-menu"/>
+                    <label class= "menu-button-container" for="checkbox-menu">
+                       <span></span>
+                       <span></span> 
+                       <span></span>  
+                    </label>
+                    <nav>
+                       
+                          <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="empresa.html">Sobre Empresa</a></li>
+                            <li><a href="#formulario_ancora">Formulários</a></li>
+                          </ul>
+                    </nav>
+                </div>
+            </section>
+    </div>
     </header>
     <!--sessao da pagina principal-->
     <section class="banner">
@@ -45,27 +61,27 @@
       <form id="form" action="https://www.google.com/">
           <h2>Formulário de Desejos</h2>
         <div>
-        <label for="name">Digite teu nome:</label>
+        <label for="name" class="name">Digite teu nome:</label>
         <input id="name"type="text"></input>
         </div>
         <div>
-        <label for="profissao">Digite tua profissão:</label>
+        <label for="profissao" class="profissao">Digite tua profissão:</label>
         <input id="profissao"type="text"></input>
         </div>
         <div>
-        <label for="desejo">Escreva sobre você e aquilo que mais deseja:</label>
+        <label for="desejo" class="desejo">Escreva sobre você e aquilo que mais deseja:</label>
         <textarea rows="5" id="desejo" type="text" fixed></textarea>
         </div>
         <fieldset>
             <legend>Você faz exercícios regularmente?</legend>
             <div>
-                <label for="sim">sim</label>
+                <label for="sim" class="sim">sim</label>
                 <input type="radio" id="sim" name="não"
                        checed>
                 
               </div>
               <div>
-                  <label for="nao">não</label>
+                  <label for="nao" class="nao">não</label>
                   <input type="radio" id="nao" name="Não"
                          >
                 </div>
@@ -74,29 +90,29 @@
             <legend> Onde você encontra teus tópicos, assuntos favoritos?:</legend>
         
             <div>
-                <label for="instagram">instagram</label>
+                <label for="instagram" class="instagram">instagram</label>
               <input type="checkbox" id="instagram" name="instagram" checked>
              
             </div>
         
             <div>
-                <label for="facebook">Facebook</label>
+                <label for="facebook" class="facebook">Facebook</label>
               <input type="checkbox" id="facebook" name="facebook">
              
             </div>
             <div>
-                <label for="Youtube">Youtube</label>
+                <label for="Youtube" class="youtube">Youtube</label>
                 <input type="checkbox" id="Youtube" name="Youtube">
                 
               </div>
               <div>
-                  <label for="app">Aplicativo</label>
+                  <label for="app" class="app">Aplicativo</label>
                   <input type="checkbox" id="app" name="app">
                   
                 </div>
         </fieldset>
         <!--https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/datalist-->
-        <label>Qual o seu navegador favorito?</label>
+        <label class="favorito">Qual o seu navegador favorito?</label>
         <input list="browsers" />
               <datalist id="browsers">
                 <option value="Chrome">
@@ -105,7 +121,7 @@
                 <option value="Opera">
                 <option value="Safari">
               </datalist>
-              <label>Qual o tipo, gênero de filme que você gosta?</label>
+              <label class="filme">Qual o tipo, gênero de filme que você gosta?</label>
                 <select name="moviePreference" id="moviePreference">
                     <option value="">-Por favor, selecione uma opção-</option>
                     <option></option>

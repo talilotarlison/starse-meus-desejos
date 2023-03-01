@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projetos e Desejos Incriveis</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" media="screen" />
+
   </head>
   <body>
     <!---cabeçalho da pagina-->
@@ -13,9 +15,9 @@
       <h1><span>StartSa </span>| Página de muitos desejos</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Sobre Empresa</li>
-          <li>Formulários</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="empresa.html">Sobre Empresa</a></li>
+          <li><a href="#formulario_ancora">Formulários</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +40,7 @@
     <!--Forumulario do site
     https://andrehlb.github.io/webdev.github.io/#form
   https://triangulo.dev/posts/css-grid-alinhando-elementos-na-pratica/-->
-    <section class="formulario">
+    <section class="formulario" id="formulario_ancora">
       
       <form id="form" action="https://www.google.com/">
           <h2>Formulário de Desejos</h2>
@@ -118,5 +120,7 @@
         <button class="botao-enviar" type="submit" value="Enviar"> Enviar </button>
       </form>
     </section>
+    <footer>
+      <p>Projeto feito no curso da <span>StarSa</span> - 2022.</p></footer>
   </body>
 </html>

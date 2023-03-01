@@ -162,6 +162,7 @@ footer{
     justify-content: center;
     background-color: black;
     width: 100vw;
+    border-bottom: solid 5px  #4176e1 ; 
     
   }
   header > h1 {
